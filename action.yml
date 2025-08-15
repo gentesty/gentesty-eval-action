@@ -1,0 +1,16 @@
+name: Gentesty Evaluation Action
+description: Connects to a WebSocket from a webhook URL with token-based auth and streams output
+branding:
+  icon: "activity"
+  color: "blue"
+author: gentesty
+inputs:
+  webhook_url:
+    description: The webhook HTTP URL that upgrades to WS
+    required: true
+  token:
+    description: Bearer token for authentication
+    required: true
+runs:
+  using: "node20"
+  main: "src/index.ts"
