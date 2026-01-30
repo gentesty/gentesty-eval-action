@@ -1,0 +1,19 @@
+{
+  "name": "gentesty-evaluation-action",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "node-fetch": "^3.3.2",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/ws": "^8.5.10",
+    "@vercel/ncc": "^0.38.4",
+    "typescript": "^5.5.4"
+  }
+}
