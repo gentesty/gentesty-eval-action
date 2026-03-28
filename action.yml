@@ -1,0 +1,18 @@
+name: Gentesty Evaluation Action
+description: Connects to a WebSocket from a webhook URL using GitHub OIDC for auth and streams output
+author: gentesty
+branding:
+  icon: "activity"
+  color: "blue"
+
+inputs:
+  webhook_url:
+    description: The webhook HTTP URL that upgrades to WS
+    required: true
+  audience:
+    description: The OIDC audience value
+    required: false
+
+runs:
+  using: "node20"
+  main: "dist/index.js"
